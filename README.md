@@ -6,7 +6,7 @@ Group Members: Nathan Kidanemariam (nkidanem)
 
 App Description: Allows users to search YouTube for hymns, folk songs, and sacred music, then save entries with personal reflections and categories using MongoDB.
 
-YouTube Video Link: https://www.youtube.com/your-demo-link
+YouTube Video Link: https://youtu.be/zeNre_Uei70
 
 APIs: YouTube Data API v3 (https://developers.google.com/youtube/v3)
 
