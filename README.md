@@ -12,7 +12,7 @@ APIs: YouTube Data API v3 (https://developers.google.com/youtube/v3)
 
 Contact Email: nkidanem@terpmail.umd.edu
 
-Deployed App Link: https://your-render-link.onrender.com
+Deployed App Link: https://hymnbridge.onrender.com
 
 AI Use:
 1. Claude
