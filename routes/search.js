@@ -41,7 +41,7 @@ function buildSearchPage(query, resultsHTML, errorHTML, noResultsHTML) {
                                 id="query"
                                 name="query"
                                 type="text"
-                                placeholder="e.g. Ethiopian hymn, Irish folk song, Appalachian music"
+                                placeholder="e.g. hymn, folk song, Any music"
                                 value="${query}"
                                 required
                                 autofocus
