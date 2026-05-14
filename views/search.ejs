@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Music - HymnBridge</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>&#9836; HymnBridge</h1>
+            <p class="text">Search for cultural songs and hymns</p>
+        </header>
+
+        <nav class="links">
+            <a href="/">Home</a>
+            <a href="/search">Search Music</a>
+            <a href="/entries">Saved Entries</a>
+            <a href="/entries/new">Add Entry</a>
+        </nav>
+
+        <main>
+            <div class="search">
+                <h2>Search YouTube for Music</h2>
+
+                <form action="/search" method="post">
+
+                    <label for="query">
+                        <u>Search for a hymn, folk song, or cultural music:</u>
+                    </label>
+
+                    <input
+                        id="query"
+                        name="query"
+                        type="text"
+                        placeholder="e.g. Ethiopian hymn, Irish folk song, Appalachian music"
+                        required
+                        autofocus
+                    >
+
+                    <input id="search" type="submit" value="Search">
+
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="bottom">
+                <a href="/">&copy; HymnBridge &mdash; Preserving Songs Across Cultures</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "hymnbridge",
+  "version": "1.0.0",
+  "description": "A cultural hymn and folk music archive app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "node-fetch": "^3.3.2",
+    "readline": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

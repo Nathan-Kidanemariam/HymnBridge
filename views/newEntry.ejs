@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Entry - HymnBridge</title>
+<link rel="stylesheet" href="/styles/style.css">
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>&#9836; HymnBridge</h1>
+            <p class="text">Save a song to your archive</p>
+        </header>
+
+        <nav class="links">
+            <a href="/">Home</a>
+            <a href="/search">Search Music</a>
+            <a href="/entries">Saved Entries</a>
+            <a href="/entries/new">Add Entry</a>
+        </nav>
+
+        <main>
+            <div class="form">
+                <h2>Add a New Entry</h2>
+
+                <form action="/entries" method="post">
+
+                    <label for="title"><u>Song / Hymn Title:</u></label>
+
+                    <input id="title" name="title" type="text"
+                    placeholder="e.g. Amazing Grace"
+                    value="<%= prefill.title %>" required autofocus>
+
+                    <label for="artist"><u>Artist / Channel / Ensemble:</u></label>
+
+                    <input id="artist" name="artist" type="text"
+                    placeholder="e.g. The Choir of Kings College"
+                    value="<%= prefill.artist %>" required>
+
+                    <label for="link"><u>Video or Source Link:</u></label>
+
+                    <input id="link" name="link" type="url"
+                    placeholder="https://www.youtube.com/watch?v=..."
+                    value="<%= prefill.link %>" required>
+
+                    <label for="category"><u>Category:</u></label>
+
+                    <select id="category" name="category" required>
+                        <option value="" hidden>&nbsp;</option>
+                        <option value="Hymn">Hymn</option>
+                        <option value="Folk Song">Folk Song</option>
+                        <option value="Gospel">Gospel</option>
+                        <option value="Spiritual">Spiritual</option>
+                        <option value="Chant">Chant</option>
+                        <option value="Traditional">Traditional</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="reflection"><u>Personal Reflection:</u></label>
+
+                    <textarea id="reflection" name="reflection"
+                    rows="5" cols="45"
+                    placeholder="Why does this song matter to you? What does it make you feel or remember?"
+                    required></textarea>
+
+                    <div class="buttons">
+                        <input id="save" type="submit" value="Save Entry">
+                        <input id="clear" type="reset" value="Clear">
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="bottom">
+                <a href="/">&copy; HymnBridge &mdash; Preserving Songs Across Cultures</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
